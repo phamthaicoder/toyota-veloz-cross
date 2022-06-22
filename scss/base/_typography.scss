@@ -2,46 +2,46 @@
 
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Regular.tff') format('truetype');
+    src: url('../../font/ToyotaType-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Toyota-Type';
     src: url('../../font/ToyotaType-Black.ttf') format('truetype'),
-         url('../../font/ToyotaType-BlackIt.tff') format('truetype');
+         url('../../font/ToyotaType-BlackIt.ttf') format('truetype');
     font-weight: 900;
 }
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Bold.tff') format('truetype'),
-         url('../../font/ToyotaType-BoldIt.tff') format('truetype');
+    src: url('../../font/ToyotaType-Bold.ttf') format('truetype'),
+         url('../../font/ToyotaType-BoldIt.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Book.tff') format('truetype'),
-         url('../../font/ToyotaType-BookIt.tff') format('truetype');
+    src: url('../../font/ToyotaType-Book.ttf') format('truetype'),
+         url('../../font/ToyotaType-BookIt.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Italic.tff') format('truetype');
+    src: url('../../font/ToyotaType-Italic.ttf') format('truetype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Light.tff') format('truetype'),
-         url('../../font/ToyotaType-LightIt.tff') format('truetype');
+    src: url('../../font/ToyotaType-Light.ttf') format('truetype'),
+         url('../../font/ToyotaType-LightIt.ttf') format('truetype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Toyota-Type';
-    src: url('../../font/ToyotaType-Semibold.tff') format('truetype'),
-         url('../../font/ToyotaType-SemiboldIt.tff') format('truetype');
+    src: url('../../font/ToyotaType-Semibold.ttf') format('truetype'),
+         url('../../font/ToyotaType-SemiboldIt.ttf') format('truetype');
     font-weight: 600;
 }
 
@@ -49,7 +49,6 @@
 
 * {
     font-family: 'Toyota-Type';
-    color: $color-white;
 }
 
 a {

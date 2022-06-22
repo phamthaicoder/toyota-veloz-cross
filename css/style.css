@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
 #header .banner {
   position: absolute;
-  /* background-position: center; */
   width: 100%;
-  height: 1080px;
+  height: 100%;
   z-index: -1;
-  filter: brightness(80%);
+  filter: brightness(70%);
 }
 
 html {
@@ -19,52 +18,56 @@ a {
 
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Regular.tff") format("truetype");
+  src: url("../../font/ToyotaType-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Black.ttf") format("truetype"), url("../../font/ToyotaType-BlackIt.tff") format("truetype");
+  src: url("../../font/ToyotaType-Black.ttf") format("truetype"), url("../../font/ToyotaType-BlackIt.ttf") format("truetype");
   font-weight: 900;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Bold.tff") format("truetype"), url("../../font/ToyotaType-BoldIt.tff") format("truetype");
+  src: url("../../font/ToyotaType-Bold.ttf") format("truetype"), url("../../font/ToyotaType-BoldIt.ttf") format("truetype");
   font-weight: bold;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Book.tff") format("truetype"), url("../../font/ToyotaType-BookIt.tff") format("truetype");
+  src: url("../../font/ToyotaType-Book.ttf") format("truetype"), url("../../font/ToyotaType-BookIt.ttf") format("truetype");
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Italic.tff") format("truetype");
+  src: url("../../font/ToyotaType-Italic.ttf") format("truetype");
   font-style: italic;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Light.tff") format("truetype"), url("../../font/ToyotaType-LightIt.tff") format("truetype");
+  src: url("../../font/ToyotaType-Light.ttf") format("truetype"), url("../../font/ToyotaType-LightIt.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Semibold.tff") format("truetype"), url("../../font/ToyotaType-SemiboldIt.tff") format("truetype");
+  src: url("../../font/ToyotaType-Semibold.ttf") format("truetype"), url("../../font/ToyotaType-SemiboldIt.ttf") format("truetype");
   font-weight: 600;
 }
 * {
   font-family: "Toyota-Type";
-  color: #fff;
 }
 
 a {
   color: #fff !important;
 }
 
+#header .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .breadcrumb .breadcrumb-item {
   margin-bottom: 40px;
 }
 .breadcrumb .breadcrumb-item a {
-  color: #0C1323;
+  color: #231F20;
   font-size: 14px;
   font-weight: 400;
 }
@@ -78,9 +81,9 @@ a {
 #home #header {
   background-size: cover;
   height: 100vh;
-  -moz-box-shadow: inset 0 150px 100px -100px #0C1323;
-  -webkit-box-shadow: inset 0 150px 100px -100px #0C1323;
-  box-shadow: inset 0 150px 100px -100px #0C1323;
+  -moz-box-shadow: inset 0 150px 100px -100px #231F20;
+  -webkit-box-shadow: inset 0 150px 100px -100px #231F20;
+  box-shadow: inset 0 150px 100px -100px #231F20;
   position: relative;
 }
 #home #header .tool {
@@ -92,12 +95,32 @@ a {
 #home #header .tool img {
   padding: 10px;
 }
+#home #introduction {
+  height: 540px;
+  margin-top: 120px;
+  text-align: center;
+}
+#home #introduction .title {
+  color: #CE0402;
+  font-weight: 600;
+  font-size: 32px;
+}
+#home #introduction .thumb {
+  width: 200px;
+}
 #home .slider {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 480px;
   margin-top: 80px;
+}
+#home .background-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(60%);
 }
 #home #ss {
   margin-top: 120px;
@@ -158,9 +181,9 @@ a {
   align-items: center;
 }
 #home #project .project__btn {
-  border: 1px solid #ED1C24;
+  border: 1px solid #CE0402;
   text-decoration: none;
-  color: #0C1323;
+  color: #231F20;
   padding: 9px 16px;
   height: fit-content;
   display: flex;
@@ -228,7 +251,7 @@ a {
 #home #project .project__slideshow .project__content .content__description .description__infor .infor__name .info__title {
   font-size: 24px;
   font-weight: 400;
-  color: #0C1323;
+  color: #231F20;
   margin-bottom: 12px;
 }
 #home #project .project__slideshow .project__content .content__description .description__infor .infor__name .info__title a {
@@ -242,7 +265,7 @@ a {
 #home #project .project__slideshow .project__content .content__description .description__infor .infor__service .info__title, #home #project .project__slideshow .project__content .content__description .description__infor .infor__address .info__title {
   font-size: 14px;
   font-weight: 600;
-  color: #0C1323;
+  color: #231F20;
   margin-bottom: 8px;
 }
 #home #project .project__slideshow .project__content .content__description .description__infor .infor__service .info__description, #home #project .project__slideshow .project__content .content__description .description__infor .infor__address .info__description {
@@ -279,7 +302,7 @@ a {
 #home #product .product__content .content__item div span {
   font-size: 16px;
   font-weight: 400;
-  color: #0C1323;
+  color: #231F20;
 }
 #home #product .product__action {
   text-align: center;
@@ -287,9 +310,9 @@ a {
 }
 #home #product .product__action a {
   text-decoration: none;
-  color: #0C1323;
+  color: #231F20;
   padding: 9px 16px;
-  border: 1px solid #ED1C24;
+  border: 1px solid #CE0402;
 }
 #home #product .product__action a span {
   font-size: 14px;
