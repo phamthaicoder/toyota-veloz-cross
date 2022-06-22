@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
+#header .banner {
+  position: absolute;
+  /* background-position: center; */
+  width: 100%;
+  height: 1080px;
+  z-index: -1;
+  filter: brightness(80%);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -44,7 +53,11 @@ a {
 }
 * {
   font-family: "Toyota-Type";
-  color: #0C1323;
+  color: #fff;
+}
+
+a {
+  color: #fff !important;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -63,9 +76,21 @@ a {
 }
 
 #home #header {
-  background-image: url(../../img/home/banner.JPG);
   background-size: cover;
   height: 100vh;
+  -moz-box-shadow: inset 0 150px 100px -100px #0C1323;
+  -webkit-box-shadow: inset 0 150px 100px -100px #0C1323;
+  box-shadow: inset 0 150px 100px -100px #0C1323;
+  position: relative;
+}
+#home #header .tool {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  background-color: #231F20;
+}
+#home #header .tool img {
+  padding: 10px;
 }
 #home .slider {
   display: flex;
