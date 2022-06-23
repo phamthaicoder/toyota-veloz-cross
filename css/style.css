@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
 .container {
-  min-width: 1600px !important;
+  max-width: 1600px !important;
 }
 
-#header .banner {
+.banner {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -110,22 +110,63 @@ a {
 #home #introduction .thumb {
   width: 200px;
 }
+#home .footer-banner {
+  height: 110vh;
+  position: relative;
+}
 #home .week {
   position: relative;
-  height: 110vh;
+  height: 120vh;
   -moz-box-shadow: inset 0 -300px 150px -100px #231F20;
   -webkit-box-shadow: inset 0 -300px 150px -100px #231F20;
   box-shadow: inset 0 -300px 150px -100px #231F20;
 }
 #home .week .title {
+  max-width: 80%;
   color: #fff;
   font-weight: 600;
   font-size: 27px;
+  text-transform: uppercase;
 }
 #home .week .description {
+  max-width: 80%;
   color: #fff;
   font-weight: 400;
   font-size: 18px;
+}
+#home #monday .image {
+  position: relative;
+}
+#home #monday .image .slider {
+  position: absolute;
+  background-color: #fff;
+  padding: 8px;
+  right: -10%;
+  bottom: 2%;
+}
+#home #monday .image .slider .slider-image {
+  border: none;
+  background: none;
+  filter: brightness(60%);
+  padding-bottom: 8px;
+  display: block;
+}
+#home #monday .image .slider .slider-image img {
+  width: 140px;
+  height: 90px;
+}
+#home #monday .image .slider .slider-image.active {
+  filter: none;
+}
+#home #monday .image .slider .slider-image.active img {
+  padding: 2px;
+  background-image: linear-gradient(180deg, #fff, #CE0402);
+}
+#home #monday .image .slider:last-child {
+  padding-bottom: 0px;
+}
+#home #tuesday .image .slider .slider-image img {
+  width: 140px;
 }
 #home .background-section {
   position: absolute;
