@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
+.header .banner {
+  height: 120%;
+  bottom: -90px;
+}
+
 .banner {
   position: absolute;
   width: 100%;
@@ -68,6 +73,9 @@ a {
   color: #fff !important;
 }
 
+#header .navbar-brand img {
+  height: 160px;
+}
 #header .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   font-size: 20px;
@@ -89,7 +97,7 @@ a {
 }
 
 #home #header {
-  height: 110vh;
+  height: 120vh;
   -moz-box-shadow: inset 0 150px 100px -100px #231F20;
   -webkit-box-shadow: inset 0 150px 100px -100px #231F20;
   box-shadow: inset 0 150px 100px -100px #231F20;
@@ -105,7 +113,7 @@ a {
   padding: 10px;
 }
 #home #introduction {
-  margin: 120px 0px;
+  margin: 170px 0 120px 0px;
   text-align: center;
 }
 #home #introduction .title {
@@ -113,35 +121,42 @@ a {
   font-weight: 600;
   font-size: 32px;
 }
+#home #introduction .description {
+  font-weight: 400;
+  font-size: 18px;
+}
 #home #introduction .thumb {
-  width: 200px;
+  width: 250px;
 }
 #home .week {
   position: relative;
-  height: 120vh;
+  height: 130vh;
   -moz-box-shadow: inset 0 -35vh 50vh -60px #000;
   -webkit-box-shadow: inset 0 -35vh 50vh -60px #000;
   box-shadow: inset 0 -35vh 50vh -60px #000;
 }
-#home .week .title {
-  max-width: 80%;
+#home .week .content {
+  padding-left: 150px;
+}
+#home .week .content .title {
   color: #fff;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 30px;
   text-transform: uppercase;
+  padding-right: 100px;
 }
-#home .week .description {
-  max-width: 80%;
+#home .week .content .description {
   color: #fff;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 20px;
   position: relative;
   text-align: justify;
+  padding-right: 100px;
 }
-#home .week .description span {
+#home .week .content .description span {
   display: none;
 }
-#home .week .description p {
+#home .week .content .description p {
   display: contents;
   cursor: pointer;
 }

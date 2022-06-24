@@ -1,4 +1,10 @@
 
+.header {
+    .banner {
+        height: 120%;
+        bottom: -90px;
+    }
+}
 
 .banner {
     position: absolute;
@@ -6,6 +12,7 @@
     height: 100%;
     z-index: -1;
     filter: brightness(80%);
+    
 } 
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
