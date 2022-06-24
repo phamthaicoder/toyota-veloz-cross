@@ -49,7 +49,22 @@
             color: $color-white;
             font-weight: 400;
             font-size: 18px;
-        }
+            position: relative;
+            text-align: justify;
+            span {
+                display: none;
+            }
+            p {
+                display: contents;
+                cursor: pointer;
+            }
+            // -webkit-line-clamp: 5;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // display: -webkit-box;
+            // text-overflow: ellipsis;
+
+        };
     }
 
     #monday {
@@ -99,7 +114,7 @@
                     padding-bottom: 8px;
                     display: block;
                     img {
-                        width: 140px;
+                        width: 122px;
                         height: 90px;
                     }
                     &.active {
@@ -280,6 +295,7 @@
                 color: $color-primary;
                 font-weight: 600;
                 font-size: 32px;
+                margin-bottom: 40px;
             }
             label {
                 color: $color-black;
@@ -288,10 +304,19 @@
                 margin-bottom: 16px;
             }
 
-            input, select {
+            .input-group {
                 margin-bottom: 24px;
+                .input-group-text {
+                    background-color: $color-white;
+                    border-right: none;
+                }
             }
-            
+
+            input, select {
+                height: 64px;
+                border-left: 0;
+            }
+
             .form-action {
                 background-color: $color-primary;
                 padding: 10px 0;

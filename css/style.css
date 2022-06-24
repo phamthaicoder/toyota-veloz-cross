@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+button:focus, button:active, button.active, input:focus, input:active, input.active, select:focus, select:active, select.active {
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
 @font-face {
   font-family: "Toyota-Type";
   src: url("../../font/ToyotaType-Regular.ttf") format("truetype");
@@ -129,6 +134,15 @@ a {
   color: #fff;
   font-weight: 400;
   font-size: 18px;
+  position: relative;
+  text-align: justify;
+}
+#home .week .description span {
+  display: none;
+}
+#home .week .description p {
+  display: contents;
+  cursor: pointer;
 }
 #home #monday .image {
   position: relative;
@@ -174,7 +188,7 @@ a {
   display: block;
 }
 #home #tuesday .image .slider .slider-image img, #home #wednesday .image .slider .slider-image img {
-  width: 140px;
+  width: 122px;
   height: 90px;
 }
 #home #tuesday .image .slider .slider-image.active, #home #wednesday .image .slider .slider-image.active {
@@ -334,6 +348,7 @@ a {
   color: #CE0402;
   font-weight: 600;
   font-size: 32px;
+  margin-bottom: 40px;
 }
 #home #form form label {
   color: #231F20;
@@ -341,8 +356,16 @@ a {
   font-size: 18px;
   margin-bottom: 16px;
 }
-#home #form form input, #home #form form select {
+#home #form form .input-group {
   margin-bottom: 24px;
+}
+#home #form form .input-group .input-group-text {
+  background-color: #fff;
+  border-right: none;
+}
+#home #form form input, #home #form form select {
+  height: 64px;
+  border-left: 0;
 }
 #home #form form .form-action {
   background-color: #CE0402;
