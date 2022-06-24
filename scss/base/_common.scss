@@ -1,6 +1,4 @@
-.container {
-    max-width: 1600px !important;
-}
+
 
 .banner {
     position: absolute;
@@ -11,8 +9,15 @@
 } 
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px !important;
+    }
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
-    
+
 }
 
 // `xl` applies to large devices (desktops, less than 1200px)

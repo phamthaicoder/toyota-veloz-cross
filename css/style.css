@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
-.container {
-  max-width: 1600px !important;
-}
-
 .banner {
   position: absolute;
   width: 100%;
@@ -11,6 +7,11 @@
   filter: brightness(80%);
 }
 
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
 html {
   margin: 0;
   padding: 0;
