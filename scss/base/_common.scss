@@ -4,19 +4,11 @@ html {
 
 .header {
     .banner {
-        height: 120%;
-        bottom: -90px;
+        height: 130%;
+        bottom: -210px;
     }
 }
 
-.banner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: brightness(80%);
-    
-} 
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (min-width: 1600px) {
