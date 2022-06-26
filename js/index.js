@@ -1,8 +1,9 @@
-var readMoreAll = document.querySelectorAll('.read-more');
-var readMoreShowAll = document.querySelectorAll('.read-more-show');
 
-readMoreAll.forEach(readMore => readMore.onclick = function() {
+var readMoreAll = document.querySelectorAll('.read-more');
+
+readMoreAll.forEach(readMore => readMore.addEventListener("click", function(e) {
     readMore.style.display = 'none';
-    
-    readMoreShowAll.forEach(readMoreShow =>readMoreShow.style.display = 'contents')
-})
+    e.target.nextSibling.nextSibling.style.display = "contents";
+}))
+
+AOS.init();
