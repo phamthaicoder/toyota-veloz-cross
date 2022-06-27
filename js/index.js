@@ -36,9 +36,9 @@ function reveal() {
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 150;
       if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("kenburns-bottom");
+        reveals[i].classList.add("kenburns-top");
       } else {
-        reveals[i].classList.remove("kenburns-bottom");
+        reveals[i].classList.remove("kenburns-top");
       }
     }
   }
@@ -47,3 +47,10 @@ function reveal() {
 
 // To check the scroll position on page load
 reveal();
+
+
+function clickIntoViewImageSlider () {
+  // var imageClick = 
+}
+
+clickIntoViewImageSlider()
