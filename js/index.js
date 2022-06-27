@@ -47,10 +47,3 @@ function reveal() {
 
 // To check the scroll position on page load
 reveal();
-
-
-function clickIntoViewImageSlider () {
-  // var imageClick = 
-}
-
-clickIntoViewImageSlider()
