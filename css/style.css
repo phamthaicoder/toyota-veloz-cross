@@ -215,7 +215,7 @@ a {
   font-size: 18px;
 }
 #home #introduction .thumb {
-  width: 250px;
+  width: 100%;
 }
 #home .week {
   position: relative;
