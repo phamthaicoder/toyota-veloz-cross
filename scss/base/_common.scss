@@ -2,14 +2,34 @@ html {
     scroll-behavior: smooth !important;
     overflow-y: visible;
 }
-
-
-// `xxl` applies to x-large devices (large desktops, less than 1400px)
-@media (min-width: 1600px) {
+// `xxl` applies to x-large devices (large desktops, less than 2000px)
+@media (min-width: 1919px) {
     .container {
         max-width: 1600px !important;
     }
 }
+
+// // `xxl` applies to x-large devices (large desktops, less than 1700px)
+// @media (max-width: 1699.98px) {
+//     .container {
+//         max-width: 1500px !important;
+//     }
+// }
+
+// // `xxl` applies to x-large devices (large desktops, less than 1600px)
+// @media (max-width: 1599.98px) {
+//     .container {
+//         max-width: 1400px !important;
+//     }
+// }
+
+// // `xxl` applies to x-large devices (large desktops, less than 1600px)
+// @media (max-width: 1499.98px) {
+//     .container {
+//         max-width: 1300px !important;
+//     }
+// }
+
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
