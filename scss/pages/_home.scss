@@ -127,7 +127,7 @@
                             .carousel-item {
                                 height: 100%;
                                 img {
-                                    height: 130%;
+                                    height: 135%;
                                     bottom: -150px;
                                     position: absolute;
                                 }
@@ -436,6 +436,18 @@
             color: $color-white;
             font-weight: 400;
             font-size: 16px;
+        }
+    }
+}
+
+
+@media (max-height: 768.98px) {
+    #home {
+        #header {
+            .banner {
+                height: 135%;
+                bottom: -225px;
+            }
         }
     }
 }
@@ -998,4 +1010,15 @@
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 
+}
+
+@media (max-height: 768.98px) {
+    #home {
+        #header {
+            .banner {
+                height: 135%;
+                bottom: -225px;
+            }
+        }
+    }
 }

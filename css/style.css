@@ -76,6 +76,15 @@ a {
   font-size: 16px;
 }
 
+@media (max-height: 768.98px) {
+  #header .navbar-brand img {
+    height: 130px;
+  }
+  #header .navbar-nav .nav-item .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
 @media (max-width: 1399.98px) {
   #header .navbar-brand img {
     height: 100px;
@@ -316,7 +325,7 @@ a {
   height: 100%;
 }
 #home .week .modal .modal-dialog .modal-content .carousel .carousel-inner .carousel-item img {
-  height: 130%;
+  height: 135%;
   bottom: -150px;
   position: absolute;
 }
@@ -579,6 +588,12 @@ a {
   font-size: 16px;
 }
 
+@media (max-height: 768.98px) {
+  #home #header .banner {
+    height: 135%;
+    bottom: -225px;
+  }
+}
 @media (max-width: 1919.98px) {
   #home #header .banner {
     height: 120%;
@@ -676,6 +691,12 @@ a {
   #home #header .banner {
     height: 110%;
     bottom: -80px;
+  }
+}
+@media (max-height: 768.98px) {
+  #home #header .banner {
+    height: 135%;
+    bottom: -225px;
   }
 }
 
