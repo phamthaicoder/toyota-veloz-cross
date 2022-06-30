@@ -47,3 +47,15 @@ function reveal() {
 
 // To check the scroll position on page load
 reveal();
+
+var htmlElement = document.querySelector("html");
+var modalAll = document.querySelectorAll('.modal')
+
+modalAll.forEach(modal => modal.addEventListener('show.bs.modal', function (event) {
+  htmlElement.style.overflowY = "hidden"
+}))
+
+modalAll.forEach(modal => modal.addEventListener('hide.bs.modal', function (event) {
+  htmlElement.style.overflowY = "unset"
+}))
+

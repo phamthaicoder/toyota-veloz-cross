@@ -1,9 +1,10 @@
 html {
     scroll-behavior: smooth !important;
+    // overflow-x: h;
     overflow-y: visible;
 }
 // `xxl` applies to x-large devices (large desktops, less than 2000px)
-@media (min-width: 1919px) {
+@media (min-width: 1919.98px) {
     .container {
         max-width: 1600px !important;
     }
