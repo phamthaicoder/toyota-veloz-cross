@@ -1,10 +1,30 @@
 
 var readMoreAll = document.querySelectorAll('.read-more');
+var collapseAll = document.querySelectorAll('.collapse');
 
 readMoreAll.forEach(readMore => readMore.addEventListener("click", function(e) {
+  e.target.nextSibling.nextSibling.style.display = 'contents';
     readMore.style.display = 'none';
-    e.target.nextSibling.nextSibling.style.display = "contents";
+    e.target.nextSibling.nextSibling.nextSibling.nextSibling.style.display = 'contents';
 }))
+
+collapseAll.forEach(collapse => collapse.addEventListener("click", function(e) {
+    e.target.previousSibling.previousSibling.style.display = 'none';
+    collapse.style.display = 'none';
+    e.target.previousSibling.previousSibling.previousSibling.previousSibling.style.display = 'contents';
+}))
+
+var sliderImageAll = document.querySelectorAll('.slider-image');
+
+sliderImageAll.forEach(sliderImage => sliderImage.addEventListener("mouseover", function(e) {
+  sliderImage.classList.add('active');
+}))
+
+sliderImageAll.forEach(sliderImage => sliderImage.addEventListener("mouseout", function(e) {
+  sliderImage.classList.remove('active');
+}))
+
+
 
 // let scrollpos = window.innerHeight;
 // const monday = document.getElementById("monday");

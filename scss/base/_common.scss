@@ -4,9 +4,6 @@ html {
     overflow-y: visible !important;
 }
 
-// body::-webkit-scrollbar {
-//     display: none; /* for Chrome, Safari, and Opera */
-//   }
 #toolModal {
     form {
         .form-title {
@@ -48,6 +45,13 @@ html {
         }
     }
 }
+
+// body::-webkit-scrollbar {
+//     display: none; /* for Chrome, Safari, and Opera */
+//   }
+
+
+
 @media (min-width: 1319.98px) {
     .container {
         max-width: 1100px !important;
