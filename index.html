@@ -20,7 +20,7 @@
             <div class="container h-100">
                 <div class="h-100 d-flex flex-column justify-content-between">
                     <div class="container-fluid">
-                        <nav class="navbar navbar-dark navbar-expand-lg align-items-start mt-5">
+                        <nav class="navbar navbar-dark navbar-expand-lg align-items-start">
                             <a class="navbar-brand" href="#">
                                 <img src="./img/general/logo.svg" alt="">
                             </a>
@@ -52,18 +52,114 @@
                         <img src="./img/general/icon-button.svg" alt="">
                     </div>
                     <div class="d-flex flex-column tool">
-                        <button class="btn">
+                        <a class="btn">
                             <img src="./img/general/arrow-up.svg" alt="">
-                        </button>
-                        <button class="btn">
+                        </a>
+                        <a class="btn" data-bs-toggle="modal" data-bs-target="#toolModal">
                             <img src="./img/general/wheel.svg" alt="">
-                        </button>
-                        <button class="btn">
+                        </a>
+                        <a href="#introduction" class="btn">
                             <img src="./img/general/arrow-down.svg" alt="">
-                        </button>
-                        <button class="btn">
+                        </a>
+                        <a href="https://www.toyota.com.vn/veloz-cross-cvt-top" target="_blank" class="btn">
                             <img src="./img/general/global.svg" alt="">
-                        </button>
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="toolModal" tabindex="-1" aria-labelledby="toolModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xxl-down">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row align-items-center">
+                                        <form class="col-md-6">
+                                            <h1 class="form-title">Đăng ký lái thử xe</h1>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="form-select" class="form-label">Tỉnh / Thành phố*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-global-black.svg" alt="">
+                                                        </span>
+                                                        <select id="form-select" class="form-select" name="action">
+                                                            <option value="">Chọn tỉnh / thành phố</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="form-select" class="form-label">Đại lý liên hệ*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-home-black.svg" alt="">
+                                                        </span>
+                                                        <select id="form-select" class="form-select" name="action">
+                                                            <option value="">Đại lý liên hệ</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="name" class="form-label">Họ và tên*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-user-black.svg" alt="">
+                                                        </span>
+                                                        <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="phone" class="form-label">Số điện thoại*</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-phone-black.svg" alt="">
+                                                        </span>
+                                                        <input type="text" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="email" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-mail-black.svg" alt="">
+                                                        </span>
+                                                        <input type="email" class="form-control" id="email" placeholder="Nhập email">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="form-select" class="form-label">Nhu cầu</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <img src="./img/general/icon-message-black.svg" alt="">
+                                                        </span>
+                                                        <select id="form-select" class="form-select" name="action">
+                                                            <option value="">Dự định mua xe</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="mb-5">Bằng cách nhấp vào Đăng ký ngay, Khách hàng đồng ý gửi thông tin của mình tới
+                                                Toyota Việt Nam. Toyota Việt Nam sẽ giữ, sử dụng và đảm bảo bảo mật thông tin khách hàng
+                                                theo quy định pháp luật nhằm mục đích phục vụ và tư vấn khách hàng.</p>
+                                            <div class="d-flex justify-content-center align-content-center form-action">
+                                                <button class="btn" type="submit">Đăng ký ngay</button>
+                                            </div>
+                                        </form>
+                                        <div class="col-lg-6 text-center">
+                                            <img src="./img/home/form-image.png" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,7 +275,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- <h5 class="modal-title" id="mondayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div id="monday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -262,10 +359,12 @@
                                 Mình đạt giải Siêu mẫu ăn ảnh tại cuộc thi Siêu mẫu năm 2004, nhưng Phương vẫn khuyên
                                 “Anh nên thi đại học Sân khấu điện ảnh, sẽ có tương lai hơn”.
                                 Năm hai đại học, mình có một vai diễn đầu tiên, Phương thức xuyên đêm để xem hết 20 tập
-                                phim để góp ý về cách diễn làm sao cho sâu sắc và truyền cảm hứng hơn.<p class="read-more" style="font-style: italic;">... Xem thêm</p>
+                                phim để góp ý về cách diễn làm sao cho sâu sắc và truyền cảm hứng hơn.<p
+                                    class="read-more" style="font-style: italic;">... Xem thêm</p>
                                 <span class="read-more-show">
                                     <br>
-                                    Sau nhiều năm gắn bó trong nghề với sự ủng hộ của vợ từ đầu đến cuối, mình cũng đã có cho mình những vai diễn
+                                    Sau nhiều năm gắn bó trong nghề với sự ủng hộ của vợ từ đầu đến cuối, mình cũng đã
+                                    có cho mình những vai diễn
                                     để đời và ghi dấu ấn trong lòng khán giả. <br>
                                     Mọi người hay bảo vợ khuyên gì thì làm ngược lại. Còn mình thì cứ y lời vợ mà làm,
                                     có làm sao không cả nhà? Đi xe này cũng là vì vợ bảo xe này nghe tả hơi bị giống
@@ -282,7 +381,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- <h5 class="modal-title" id="tuesdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div id="tuesday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -389,7 +489,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- <h5 class="modal-title" id="wednesdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div id="wednesday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -500,7 +601,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <!-- <h5 class="modal-title" id="thursdayModalLabel">Hình chi tiết</h5> -->
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div id="thursday-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -601,45 +703,46 @@
                 </div>
             </div>
             <div class="modal fade" id="fridayModal" tabindex="-1" aria-labelledby="fridayModalLabel"
-            aria-hidden="true">
-            <div class="bg-dark modal-dialog modal-xl modal-fullscreen-xxl-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!-- <h5 class="modal-title" id="fridayModalLabel">Hình chi tiết</h5> -->
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div id="friday-carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/home/friday/3.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/friday/2.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/friday/1.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/friday/4.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/friday/5.JPG" class="d-block w-100" alt="...">
-                            </div>
+                aria-hidden="true">
+                <div class="bg-dark modal-dialog modal-xl modal-fullscreen-xxl-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title" id="fridayModalLabel">Hình chi tiết</h5> -->
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#friday-carousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#friday-carousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div id="friday-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/home/friday/3.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/friday/2.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/friday/1.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/friday/4.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/friday/5.JPG" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#friday-carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#friday-carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
 
         <section id="saturday" class="week saturday">
@@ -701,7 +804,6 @@
                                     thì mình sẽ luôn cố gắng thực hiện. Khi mẹ vui, cả nhà mới vui được.<br>
                                     Chip Bon có lần comment “Bố đúng là ngoài đẹp trai, trong chiều vợ”. Chịu khó chọn
                                     quà rồi được thấy vợ vui, con khen thì cũng thấy khá xứng đáng ;)
-
                                 </span>
                             </div>
                         </div>
@@ -709,48 +811,49 @@
                 </div>
             </div>
             <div class="modal fade" id="saturdayModal" tabindex="-1" aria-labelledby="saturdayModalLabel"
-            aria-hidden="true">
-            <div class="bg-dark modal-dialog modal-xl modal-fullscreen-xxl-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!-- <h5 class="modal-title" id="saturdayModalLabel">Hình chi tiết</h5> -->
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div id="saturday-carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./img/home/wednesday/6.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/wednesday/2.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/wednesday/3.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/wednesday/4.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/wednesday/5.JPG" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/home/wednesday/1.JPG" class="d-block w-100" alt="...">
-                            </div>
+                aria-hidden="true">
+                <div class="bg-dark modal-dialog modal-xl modal-fullscreen-xxl-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title" id="saturdayModalLabel">Hình chi tiết</h5> -->
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#saturday-carousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#saturday-carousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div id="saturday-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/home/wednesday/6.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/wednesday/2.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/wednesday/3.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/wednesday/4.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/wednesday/5.JPG" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/home/wednesday/1.JPG" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#saturday-carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#saturday-carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
 
         <section id="footer-banner" class="footer-banner">

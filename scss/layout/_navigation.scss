@@ -1,79 +1,37 @@
 #header {
-    .navbar-brand {
-        img {
-            height: 160px;
-        }
-    }
-    .navbar-nav {
-        .nav-item {
-            &:not(:last-child) {
-                padding-right: 120px;
-            }
-            .nav-link {
-                font-weight: 400;
-                font-size: 16px;
+    .navbar {
+        margin-top: 40px;
+        padding: 0;
+        .navbar-nav {
+            .nav-item {
+                &:not(:last-child) {
+                    padding-right: 120px;
+                }
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 18px;
+                    transition: none;
+                    &:hover {
+                        border-bottom: 3px solid $color-primary;
+                    }
+                }
             }
         }
     }
 }
 
 @media (max-height: 768.98px) {
-    #header {
-        .navbar-brand {
-            img {
-                height: 130px;
-            }
-        }
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    font-weight: 400;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    
-}
 
+}
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
-    #header {
-        .navbar-brand {
-            img {
-                height: 100px;
-            }
-        }
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    font-weight: 400;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    
+
 }
 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-    #header {
-        .navbar-brand {
-            img {
-                height: 80px;
-            }
-        }
-        .navbar-nav {
-            .nav-item {
-                &:not(:last-child) {
-                    padding-right: 60px;
-                }
-            }
-        }
-    }
-    
+
 }
 
 // `lg` applies to medium devices (tablets, less than 992px)
