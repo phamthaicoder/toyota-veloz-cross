@@ -29,9 +29,10 @@
             }
         }
         .tool {
-            position: absolute;
-            bottom: 130px;
-            right: 0;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1;
             background-color: $color-black;
             img {
                 filter: brightness(60%);
@@ -480,9 +481,6 @@
             .description {
                 margin-bottom: 0;
             }
-            .tool {
-                bottom: 114px;
-            }
         }
         .week {
             .content {
@@ -534,9 +532,6 @@
             } 
             .description {
                 margin-bottom: 0;
-            }
-            .tool {
-                bottom: 114px;
             }
         }
         #introduction {
@@ -593,7 +588,7 @@
         #header {
             height: 120vh;
             .banner {
-                bottom: -80px;
+                bottom: -72px;
             } 
             .title {
                 p {
@@ -611,9 +606,8 @@
                 }
             }
             .tool {
-                bottom: 125px;
                 img {
-                    padding: 0;
+                    padding: 5px;
                 }
             }
         }
@@ -630,6 +624,7 @@
             }
         }
         .week {
+            padding: 150px 0;
             .content {
                 .title {
                     font-weight: 600;

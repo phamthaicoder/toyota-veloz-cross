@@ -94,37 +94,38 @@ button:focus, button:active, button.active, input:focus, input:active, input.act
 
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Black.ttf") format("truetype"), url("../../font/ToyotaType-BlackIt.ttf") format("truetype");
-  font-weight: 900;
-}
-@font-face {
-  font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Bold.ttf") format("truetype"), url("../../font/ToyotaType-BoldIt.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Book.ttf") format("truetype"), url("../../font/ToyotaType-BookIt.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Italic.ttf") format("truetype");
-  font-style: italic;
-}
-@font-face {
-  font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Light.ttf") format("truetype"), url("../../font/ToyotaType-LightIt.ttf") format("truetype");
+  src: url("../font/ToyotaType-Light.ttf") format("truetype"), url("../font/ToyotaType-LightIt.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Toyota-Type";
-  src: url("../../font/ToyotaType-Semibold.ttf") format("truetype"), url("../../font/ToyotaType-SemiboldIt.ttf") format("truetype");
+  src: url("../font/ToyotaType-Book.ttf") format("truetype"), url("../font/ToyotaType-BookIt.ttf") format("truetype");
+  font-weight: 350;
+}
+@font-face {
+  font-family: "Toyota-Type";
+  src: url("../font/ToyotaType-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Toyota-Type";
+  src: url("../font/ToyotaType-Semibold.ttf") format("truetype"), url("../font/ToyotaType-SemiboldIt.ttf") format("truetype");
   font-weight: 600;
+}
+@font-face {
+  font-family: "Toyota-Type";
+  src: url("../font/ToyotaType-Bold.ttf") format("truetype"), url("../font/ToyotaType-BoldIt.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Toyota-Type";
+  src: url("../font/ToyotaType-Black.ttf") format("truetype"), url("../font/ToyotaType-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Toyota-Type";
+  src: url("../font/ToyotaType-Italic.ttf") format("truetype");
+  font-style: italic;
 }
 * {
   font-family: "Toyota-Type";
@@ -288,9 +289,10 @@ a {
   color: #fff;
 }
 #home #header .tool {
-  position: absolute;
-  bottom: 130px;
-  right: 0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
   background-color: #231F20;
 }
 #home #header .tool img {
@@ -683,9 +685,6 @@ a {
   #home #header .description {
     margin-bottom: 0;
   }
-  #home #header .tool {
-    bottom: 114px;
-  }
   #home .week .content .title {
     font-weight: 600;
     font-size: 22px;
@@ -718,9 +717,6 @@ a {
   }
   #home #header .description {
     margin-bottom: 0;
-  }
-  #home #header .tool {
-    bottom: 114px;
   }
   #home #introduction .description {
     font-weight: 400;
@@ -755,7 +751,7 @@ a {
     height: 120vh;
   }
   #home #header .banner {
-    bottom: -80px;
+    bottom: -72px;
   }
   #home #header .title p {
     font-size: 60px;
@@ -770,11 +766,8 @@ a {
   #home #header .description img {
     height: 40px;
   }
-  #home #header .tool {
-    bottom: 125px;
-  }
   #home #header .tool img {
-    padding: 0;
+    padding: 5px;
   }
   #home #introduction .title {
     color: #CE0402;
@@ -785,6 +778,9 @@ a {
     font-weight: 400;
     font-size: 14px;
     margin: 0 40px;
+  }
+  #home .week {
+    padding: 150px 0;
   }
   #home .week .content .title {
     font-weight: 600;

@@ -79,3 +79,36 @@ modalAll.forEach(modal => modal.addEventListener('hide.bs.modal', function (even
   htmlElement.style.overflowY = "unset"
 }))
 
+
+//Get the button
+const scrollToTopBtn = document.getElementById("scroll-to-top");
+const scrollToBottomBtn = document.getElementById("scroll-to-bottom");
+
+// When the user scrolls down 1000px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+//     scrollToTopBtn.style.display = "block";
+//   } else {
+//     scrollToTopBtn.style.display = "none";
+//   }
+// }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+};
+function bottomFunction(){
+  document.getElementById('footer').scrollIntoView({behavior: "smooth"});
+}
+
+
+scrollToTopBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  topFunction();
+});
+
+scrollToBottomBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  bottomFunction();
+}); 
