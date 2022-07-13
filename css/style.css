@@ -611,6 +611,7 @@ a {
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
+  margin-bottom: 60px;
 }
 #home #footer-banner .link:hover {
   background-color: #CE0402;
