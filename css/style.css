@@ -304,6 +304,10 @@ a {
 #home #header .tool img:hover {
   filter: brightness(100%);
 }
+#home #header .modal .modal-content .modal-header {
+  border: none;
+  padding-bottom: 0;
+}
 #home #introduction {
   padding: 120px 0;
   text-align: center;

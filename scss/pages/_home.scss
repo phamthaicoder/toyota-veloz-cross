@@ -43,6 +43,14 @@
                 }
             }
         }
+        .modal {
+            .modal-content {
+                .modal-header {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
 
     #introduction {
