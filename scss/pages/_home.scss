@@ -86,13 +86,13 @@
             .title {
                 color: $color-white;
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 28px;
                 text-transform: uppercase;
             }
             .description {
                 color: $color-white;
                 font-weight: 100;
-                font-size: 20px;
+                font-size: 18px;
                 position: relative;
                 text-align: justify;
                 letter-spacing: 1px;
@@ -176,28 +176,28 @@
             .content {
                 padding-right: 98px;
             }
+            .image {
+                // padding-left: 98px;
+            }
         }
         &:nth-of-type(odd) {
             .content {
                 padding-left: 98px;
+            }
+            .image {
+                // padding-right: 98px;
             }
         }
     }
 
     .background-section {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        // height: 100%;
         z-index: -1;
         filter: brightness(40%);
         display: block;
         top: 0;
-    }
-
-    #monday-carousel, #tuesday-carousel, #wednesday-carousel, #thursday-carousel, #friday-carousel, #saturday-carousel, #sunday-carousel {
-        img {
-            filter: brightness(80%);
-        }
     }
 
     #monday {   
@@ -352,40 +352,6 @@
                 }
                 &:last-child {
                     padding: 8px 0 0 8px;
-                }
-            }
-        }
-    }
-
-    #sunday {
-        .image {
-            position: relative;
-            .slider {
-                position: absolute;
-                background-color: $color-white;
-                padding: 8px;
-                left: -10%;
-                bottom: 1.5%;
-                .slider-image {
-                    border: none;
-                    background: none;
-                    filter: brightness(60%);
-                    padding-bottom: 8px;
-                    display: block;
-                    img {
-                        width: 140px;
-                        height: 90px;
-                    }
-                    &.active {
-                        filter: none;
-                        img {
-                            padding: 2px;
-                            background-image: linear-gradient(180deg, $color-white, $color-primary);
-                        }
-                    }
-                }
-                &:last-child {
-                    padding-bottom: 0px;
                 }
             }
         }
