@@ -345,7 +345,7 @@ a {
 #home .week .content .description {
   color: #fff;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 19px;
   position: relative;
   text-align: justify;
   letter-spacing: 1px;
@@ -662,6 +662,9 @@ a {
   #home #header .description {
     margin-bottom: 0;
   }
+  #home .week {
+    padding: 120px 0;
+  }
   #home .week .content .title {
     font-weight: 600;
     font-size: 22px;
@@ -679,18 +682,21 @@ a {
   #home .week:nth-of-type(odd) .content {
     padding-left: 80px;
   }
+  #home .week .modal .modal-dialog .modal-content {
+    width: 75%;
+  }
   #home #footer-banner .logo-section {
     width: 210px;
     margin-bottom: -24px;
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 1440.98px) and (max-height: 849.98px) {
+@media screen and (max-width: 1440.98px) and (max-height: 900.98px) {
   #home #header {
     height: 115vh;
   }
   #home #header .banner {
-    bottom: unset;
+    bottom: -120px;
   }
   #home #header .description {
     margin-bottom: 0;
@@ -699,6 +705,9 @@ a {
     font-weight: 400;
     font-size: 18px;
     margin: 0 40px;
+  }
+  #home .week {
+    padding: 155px 0;
   }
   #home .week .content .title {
     font-weight: 600;
@@ -716,6 +725,9 @@ a {
   }
   #home .week:nth-of-type(odd) .content {
     padding-left: 54px;
+  }
+  #home .week .modal .modal-dialog .modal-content {
+    width: 90%;
   }
   #home #footer-banner .logo-section {
     width: 205px;
@@ -771,14 +783,14 @@ a {
     height: 63px;
     width: 95px;
   }
-  #home .week .modal .modal-dialog .modal-content {
-    width: 75%;
-  }
   #home .week:nth-of-type(even) .content {
     padding-right: 44px;
   }
   #home .week:nth-of-type(odd) .content {
     padding-left: 44px;
+  }
+  #home .week .modal .modal-dialog .modal-content {
+    width: 75%;
   }
   #home #footer-banner .logo-section {
     width: 190px;
