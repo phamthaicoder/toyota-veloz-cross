@@ -112,3 +112,7 @@ scrollToBottomBtn.addEventListener('click', function(e){
   e.preventDefault();
   bottomFunction();
 }); 
+
+window.onscroll = function() {
+  console.log('as', window.scrollY)
+}
