@@ -35,6 +35,8 @@
             right: 10px;
             z-index: 1;
             background-color: $color-black;
+            display: flex;
+            flex-direction: column;
             img {
                 filter: brightness(60%);
                 padding: 15px;
@@ -730,20 +732,19 @@
         #header {
             height: 100vh;
             .banner {
-                // position: absolute;
                 width: auto;
                 height: 100%;
                 left: -45%;
-                // height: 120%;
                 bottom: unset;
-                // z-index: -1;
-                // filter: brightness(74%);
             }
             .title {
-                display: none;
+                // display: none;
+                p {
+                    font-size: 40px;
+                }
             }
             .description {
-                display: none;
+                // display: none;
             }
             .tool {
                 img {
